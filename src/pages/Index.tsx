@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Dog, Cat, Heart, PawPrint } from "lucide-react";
 import NavBar from "@/components/NavBar";
+import Footer from "@/components/Footer";
 
 const Index = () => {
   return (
@@ -95,6 +96,8 @@ const Index = () => {
           </Button>
         </div>
       </section>
+
+      <Footer />
     </div>
   );
 };
