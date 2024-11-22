@@ -1,11 +1,14 @@
 import { Button } from "@/components/ui/button";
 import { Dog, Cat, Heart, PawPrint } from "lucide-react";
+import NavBar from "@/components/NavBar";
 
 const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-b from-secondary to-white">
+      <NavBar />
+      
       {/* Hero Section */}
-      <section className="container px-4 pt-20 pb-16 animate-fadeIn">
+      <section className="container px-4 pt-32 pb-16 animate-fadeIn">
         <div className="text-center max-w-3xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Find Your Perfect Pet Companion
@@ -21,7 +24,7 @@ const Index = () => {
       </section>
 
       {/* Features Section */}
-      <section className="py-20 bg-white">
+      <section id="features" className="py-20 bg-white">
         <div className="container px-4">
           <div className="grid md:grid-cols-3 gap-8">
             {[
@@ -58,7 +61,7 @@ const Index = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-secondary">
+      <section id="stats" className="py-20 bg-secondary">
         <div className="container px-4">
           <div className="grid md:grid-cols-3 gap-8 text-center">
             {[
