@@ -3,8 +3,8 @@ import { Button } from "@/components/ui/button";
 
 const Footer = () => {
   return (
-    <footer className="bg-secondary py-16">
-      <div className="container px-4">
+    <footer className="bg-secondary py-16 w-full">
+      <div className="container mx-auto px-4 max-w-7xl">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <h3 className="text-xl font-bold">PawsitiveAdopt</h3>

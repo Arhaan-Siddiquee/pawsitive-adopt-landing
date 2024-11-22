@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { PawPrint } from "lucide-react";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -26,12 +27,15 @@ const NavBar = () => {
       >
         <div className="px-6 py-3">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-2">
+            <Link to="/" className="flex items-center space-x-2">
               <PawPrint className="h-6 w-6 text-primary" />
               <span className="text-xl font-bold text-gray-900">PawsitiveAdopt</span>
-            </div>
+            </Link>
             
             <div className="hidden md:flex items-center space-x-8">
+              <Link to="/adopt" className="text-gray-600 hover:text-primary transition-colors">
+                Adopt
+              </Link>
               <a href="#features" className="text-gray-600 hover:text-primary transition-colors">
                 Features
               </a>
